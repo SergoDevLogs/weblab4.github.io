@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styler.css" rel="stylesheet" type="text/css">
+    <script src="scripts/main.js"></script>
+    <title>Магазин одежды - Вариант 1</title>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <span class="star"><img src="images/Logo.png"></span>
+            <strong class="variant">Вариант 1</strong>
+            <nav class="nav">
+                <a href="#" class="link">Верхняя одежда</a>
+                <a href="#" class="link">Брюки</a>
+                <a href="#" class="link">Аксессуары</a>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="button">
+                <img src="images/users.png" alt="" class="img">
+            </button>
+            <button class="button">
+                <img src="images/cart.png" alt="" class="img">
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="products">
+            <section class="controls">
+                <div class="details">
+                    <div class="filters-dropdown">
+                        <button class="filters-toggle btn">
+                            <img src="images/filter-icon.png" alt="Фильтры" class="icon">
+                            Фильтры
+                        </button>
+                        <div class="filters-menu menu">
+                            <label class="filter-option option">
+                                <input type="checkbox" class="filter-check check">
+                                <span>Акне Студия</span>
+                            </label>
+                            <label class="filter-option option">
+                                <input type="checkbox" class="filter-check check">
+                                <span>АМИ Париж</span>
+                            </label>
+                            <label class="filter-option option">
+                                <input type="checkbox" class="filter-check check">
+                                <span>Вквадрате2</span>
+                            </label>
+                            <label class="filter-option option">
+                                <input type="checkbox" class="filter-check check">
+                                <span>Каменный остров</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sort">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            <span>По умолчанию</span>
+                            <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-option" data-value="default">По умолчанию</div>
+                            <div class="dropdown-option" data-value="available">Сначала доступные</div>
+                            <div class="dropdown-option" data-value="expensive">Сначала дорогие</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <article class="card">
+                    <div class = "image-container">
+                        <img src="images/product1.png" alt="Фото товара 1" class="photo">
+                        <div class="overlay">
+                            <div class="overlay-title">Каменный остров</div>
+                            <div class="overlay-text">Инновации и функциональность находятся в приоритете у Каменного острова, о чем свидетельствует этот жилет</div>
+                        </div>
+                    </div>
+                    <div class="price">30 000 руб</div>
+                    <div class="underprice">
+                        <span class="name">Бренд </span>
+                        <span class="title">Каменный остров</span>
+                        <p class="desc">Жилет с нашивкой компасом</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="images/product2.png" alt="Фото товара 2" class="photo">
+                        <div class="overlay">
+                            <div class="overlay-title">АМИ Париж</div>
+                            <div class="overlay-text">В этой модели АМИ Париж представляет смелый взгляд на классический силуэт рубашки</div>
+                        </div>
+                    </div>
+                    <div class="price">18 800 руб</div>
+                    <div  class="underprice">
+                        <span class="name">Бренд </span>
+                        <span class="title">АМИ Париж</span>
+                        <p class="desc">Полосатая рубашка с коротким рукавом</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="images/product3.png" alt="Фото товара 3" class="photo">
+                        <div class="overlay">
+                            <div class="overlay-title">Вквадрате2</div>
+                            <div class="overlay-text">Сделано в Италии</div>
+                        </div>
+                    </div>
+                    <div class="price">47 300 руб</div>
+                    <div  class="underprice">
+                        <span class="name">Бренд </span>
+                        <span class="title">Вквадрате2</span>
+                        <p class="desc">Укороченные брюки с вышитым логотипом</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="images/product4.png" alt="Фото товара 4" class="photo">
+                        <div class="overlay">
+                            <div class="overlay-title">Акне</div>
+                            <div class="overlay-text">Лацканы из светло-серой шерсти в вертикальную полоску</div>
+                        </div>
+                    </div>
+                    <div class="price">19 000 руб</div>
+                    <div class = "underprice">
+                        <span class="name">Бренд </span>
+                        <span class="title">Акне Студия</span>
+                        <p class="desc">Полосатый двубортный блейзер</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&copy; Вариант 1. Гуров Сергей, группа АИ-23-1</p>
+    </footer>
+</body>
+</html>
